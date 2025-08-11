@@ -1,0 +1,81 @@
+/* 全局样式重置 */
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+:root {
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Segoe UI, Arial, Roboto, 'PingFang SC', 'miui', 'Hiragino Sans GB', 'Microsoft Yahei', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #323233;
+  background-color: #f7f8fa;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* 中秋节主题色 */
+:root {
+  --primary-color: #ff8800; /* 橙色，代表月饼和丰收 */
+  --secondary-color: #ffd700; /* 金色，代表月亮 */
+  --text-color: #323233;
+  --text-color-light: #969799;
+  --background-color: #f7f8fa;
+  --border-color: #ebedf0;
+  --success-color: #07c160;
+  --warning-color: #ff976a;
+  --danger-color: #ee0a24;
+}
+
+/* 移动端适配 */
+html {
+  font-size: 16px;
+}
+
+/* 移动端适配：根据屏幕宽度调整基础字体大小 */
+@media screen and (max-width: 375px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 414px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+/* 移动端适配：禁止用户缩放 */
+@media screen and (max-width: 768px) {
+  html, body {
+    overflow-x: hidden;
+  }
+}
+
+/* 修改Vant组件主题色 */
+:root:root {
+  --van-primary-color: var(--primary-color);
+  --van-success-color: var(--success-color);
+  --van-danger-color: var(--danger-color);
+  --van-warning-color: var(--warning-color);
+  --van-text-color: var(--text-color);
+  --van-text-color-2: var(--text-color-light);
+  --van-background-color: var(--background-color);
+  --van-background-color-light: #fafafa;
+}
+
+#app {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  height: 100vh;
+}
